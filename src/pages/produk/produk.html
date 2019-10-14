@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Produk</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Produk Musik Dangdut</h2>
+  <button ion-button (click)="Beli({name: 'Dangdut Pop', quantity: 25})">Dangdut Pop</button><br>
+  <button ion-button (click)="Beli({name: 'Dangdut Remix', quantity: 20})">Dangdut Remix</button><br>
+  <button ion-button (click)="Beli({name: 'Dangdut Koplo', quantity: 50})">Dangdut Koplo</button><br>
+  <button ion-button (click)="Beli({name: 'Dangdut Rock', quantity: 35})">Dangdut Rock</button><br>
+  <button ion-button (click)="Beli({name: 'Dangdut Melayu', quantity: 15})">Dangdut Melayu</button><br>
+
+</ion-content>

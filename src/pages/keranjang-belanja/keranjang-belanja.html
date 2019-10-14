@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Keranjang Belanja</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<h2>Pesanan Saya</h2>
+<p>Nama     : {{ produkData.name }}</p>
+<p>Jumlah   : {{ produkData.quantity }}</p>
+<button ion-button (click)="Beli()">Unduh</button>
+</ion-content>
