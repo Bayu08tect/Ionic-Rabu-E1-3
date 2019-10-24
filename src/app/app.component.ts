@@ -8,7 +8,8 @@ import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { ProdukPage } from '../pages/produk/produk';
 import { KeranjangBelanjaPage } from '../pages/keranjang-belanja/keranjang-belanja';
-import { DaftarPage } from '../pages/daftar/daftar';
+import { ArtikelPage } from '../pages/artikel/artikel';
+import { KomentarPage } from '../pages/komentar/komentar';
 
 @Component({
   templateUrl: 'app.html'
@@ -30,7 +31,8 @@ export class MyApp {
       { title: 'Produk', component: ProdukPage},
       { title: 'Keranjang', component: KeranjangBelanjaPage},
       { title: 'List', component: ListPage },
-      { title: 'Daftar', component: DaftarPage}
+      { title: 'Artikel', component: ArtikelPage},
+      { title: 'Komentar', component: KomentarPage}
     ];
 
   }

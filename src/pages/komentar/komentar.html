@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Daftar Komentar</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <button ion-item *ngFor="let komentar of (komentars | async)?.results" (click)="openDetails(komentar)">
+          {{ komentar.title }}
+        </button>
+      </ion-list>
+</ion-content>

@@ -8,24 +8,26 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
-    <ion-item>
-      <ion-label fixed>Nama</ion-label>
-      <ion-input 
-      type="text" 
-      name="username" 
-      placeholder="Email/Telp"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label fixed>Kata Sandi</ion-label>
-      <ion-input 
-      type="text" 
-      name="password" 
-      placeholder="********"></ion-input>
-    </ion-item>
-  </ion-list>
-  <button 
-  ion-button 
-  type="submit"
-  block>Masuk</button>
+    <ion-list text-center>
+        <br>
+        <H3> Selamat Datang </H3>
+        <br>
+         <ion-item>
+            <ion-label color="primary" >Nama Pengguna</ion-label>
+            <ion-input type="email" [(ngModel)]="credentials.username" ></ion-input>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-label color="primary" >Kata Sandi</ion-label>
+            <ion-input type="password" [(ngModel)]="credentials.password" ></ion-input>
+        </ion-item>
+
+        <br>
+        <br>
+        <button ion-button round center (click)="login()">Masuk</button>
+
+        <br>
+        <p  text-center tappable> Lupa Kata Sandi </p>
+        <p  text-center tappable (click)="register()" > Tidak punya akun? Daftar </p>
+    </ion-list>
 </ion-content>
